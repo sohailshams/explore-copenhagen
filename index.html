@@ -19,13 +19,12 @@
   </head>
   <body>
     <header>
-
-		<div class="row no-gutters">
-			<div class="col-12 bg-dark">
-				<h2 class="slogan">Let's Explore The City Of Copenhagen</h2>
-			</div>			
-		</div>
-	</header>
+      <div class="row no-gutters">
+        <div class="col-12 bg-dark">
+          <h2 class="slogan">Let's Explore The City Of Copenhagen</h2>
+        </div>
+      </div>
+    </header>
     <div class="container-fluid image-container">
       <div class="row">
         <div class="col-md-4 col-lg-4">
@@ -41,30 +40,22 @@
           </p>
         </div>
         <div class="col-md-8 col-lg-8">
-        <p class="text">
-            <strong>
-              Denmark is the world's oldest kingdom. Whereas, Copenhagen is
-              Scandinavia's largest city and its history goes way back. There
-              are evidences that Copenhagen existed as a settlement more than
-              6,000 years ago. Among cobbled squares, narrow streets and old
-              buildings the history lives with us to this day, which attract
-              millions of tourist to Denmark.
-            </strong>
-          </p>
-         
-          <p class="text">
-            <strong>
-              Denmark is the world's oldest kingdom. Whereas, Copenhagen is
-              Scandinavia's largest city and its history goes way back. There
-              are evidences that Copenhagen existed as a settlement more than
-              6,000 years ago. Among cobbled squares, narrow streets and old
-              buildings the history lives with us to this day, which attract
-              millions of tourist to Denmark.
-            </strong>
-          </p>
+          <input
+            id="pac-input"
+            class="controls"
+            type="text"
+            placeholder="Search Box"
+          />
+         <div id="map"></div>
+        
         </div>
       </div>
     </div>
+     
+   <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+  <script async defer  
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoJlxCm-GT7Vh4EFV1K2zlBN_09lNYVmc&libraries=places&callback=initAutocomplete">
+    </script>
   </body>
   <script src="assets/js/script.js"></script>
 </html>
