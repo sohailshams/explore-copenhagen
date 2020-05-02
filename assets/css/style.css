@@ -20,30 +20,85 @@
  }
 
 
-
-
-/*
- #map {
-        width: 100%;
-        height: 700px;
-        background-color: grey;
-      }
-
-
-
-
-      /* Always set the map height explicitly to define the size of the div
+ /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
 #map {
   height: 100%;
+  margin-top: 50px;
+  background-size: cover;
 
 }
+
+#pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 250px;
+        border-radius: 5px 5px 5px 5px;
+        border: solid 1px blue;
+        
+      }
+  /*-----------------------------------Footer*/
+      footer {
+    background-color: #343a40;  
+    min-height: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-items {
+   
+    max-height: 150px;
+    text-align: center;
+    margin-top: 30px;
+    color: #fafafa;
+
+}
+
+
+.social-media-links i {
+    font-size: 150%;
+    
+  
+}
+
+.footer-links ul {
+    padding-left: 0;
+    text-align: center;
+    
+}
+
+
+.social-media-links li a i {
+    color: #fafafa;
+}
+
+@media only screen and (max-width: 767px) {
+  /* For mobile phones: */
+  #map {
+    height: 180px;
+    margin-top: 25px;
+  }
+  
+
+
+
+  
+
+
+  
+ 
 /* Optional: Makes the sample page fill the window. */
+/*
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
+
 #description {
   font-family: Roboto;
   font-size: 15px;
@@ -114,3 +169,4 @@ html, body {
 #target {
   width: 345px;
 }
+*/
