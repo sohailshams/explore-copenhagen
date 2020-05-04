@@ -14,11 +14,15 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       type="text/css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-		type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      type="text/css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Explore Copenhagen</title>
   </head>
+
   <body>
     <header>
       <div class="row no-gutters">
@@ -28,10 +32,9 @@
       </div>
     </header>
     <section class="container-fluid image-container">
-    
       <div class="row">
         <div class="col-md-4 col-lg-4">
-          <p class="text">
+          <p class="text text-justify">
             <strong>
               Denmark is the world's oldest kingdom. Whereas, Copenhagen is
               Scandinavia's largest city and its history goes way back. There
@@ -48,59 +51,64 @@
             placeholder="Search Box"
           />
         </div>
-        
+
         <div class="col-md-8 col-lg-8">
-          
-         
-        <div id="map"></div>
+          <div id="map"></div>
+          <div class="text-center">
+            <div class="col">
+              <button type="button" class="btn btn-dark btn-lg">
+                Trip Info
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-      
-      
-      
-      
     </section>
-     
-     <footer class="container-fluid">
-		<div class="row">
-			<div class="col-md-4">
-				<p class="footer-items">Created with love and passion. Copyright
-					<i class="fa fa-copyright" aria-hidden="true"></i> 2020 MSS</p>
-			</div>
 
-			<div class="col-md-8">
-				<div class="row">
-					<div class="col footer-links">
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="footer-items">
+            Created with love and passion. Copyright
+            <i class="fa fa-copyright" aria-hidden="true"></i> 2020 MSS
+          </p>
+        </div>
 
-						<ul class=" list-inline social-media-links">
-							<li class="col-2 col-md-3 footer-items list-inline-item">
-								<a href="#" class="hvr-pulse"
-									target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
-									<span class="sr-only">Facebook</span></a>
-							</li>
-							<li class="col-2 col-md-3 footer-items list-inline-item">
-								<a href="#" class="hvr-pulse"
-									target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
-									<span class="sr-only">Linkedin</span></a>
-							</li>
-							<li class="col-2 col-md-3 footer-items list-inline-item">
-								<a href="#" class="hvr-pulse"
-									target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i>
-									<span class="sr-only">Youtube</span></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col footer-links">
+              <ul class="list-inline social-media-links">
+                <li class="col-2 col-md-3 footer-items list-inline-item">
+                  <a href="#" class="hvr-pulse" target="_blank"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span></a
+                  >
+                </li>
+                <li class="col-2 col-md-3 footer-items list-inline-item">
+                  <a href="#" class="hvr-pulse" target="_blank"
+                    ><i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <span class="sr-only">Linkedin</span></a
+                  >
+                </li>
+                <li class="col-2 col-md-3 footer-items list-inline-item">
+                  <a href="#" class="hvr-pulse" target="_blank"
+                    ><i class="fa fa-youtube" aria-hidden="true"></i>
+                    <span class="sr-only">Youtube</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-
-	</footer>
-
-   <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
-  <script async defer  
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoJlxCm-GT7Vh4EFV1K2zlBN_09lNYVmc&libraries=places&callback=initAutocomplete">
-    </script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoJlxCm-GT7Vh4EFV1K2zlBN_09lNYVmc&libraries=places&callback=initAutocomplete"
+    ></script>
   </body>
   <script src="assets/js/script.js"></script>
 </html>
