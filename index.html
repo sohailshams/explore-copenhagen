@@ -67,7 +67,7 @@
                 <span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-              <form onsubmit="return sendMail(this);">
+              <form onsubmit="return sendMail(this);" id="form-reset">
                 <label for="name" class="form-title">Name</label>
                 <input type="text" name="name" id="name" placeholder="Name" class="form-control" required />
                 <label for="name">Email Address</label>
@@ -76,8 +76,8 @@
                 <textarea rows="6" name="query" id="query" placeholder="Your Question" class="form-control" required></textarea>
               
             
-              <button type="button" class="btn btn-dark hvr-pulse" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-dark hvr-pulse">Contact Us</button>
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-dark">Contact Us</button>
             
             </form>
           </div>

@@ -79,6 +79,8 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
+            document.getElementById("form-reset").reset();
+            $(".modal").modal("toggle");
         },
         function(error) {
         console.log("FAILED", error);
