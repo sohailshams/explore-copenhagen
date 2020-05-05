@@ -39,13 +39,14 @@
         width: 250px;
         border-radius: 5px 5px 5px 5px;
         border: solid 1px blue;
+        height: 25px;
         
       }
 
 
       .btn {
            
-            margin-top: 20px;
+            margin-top: 15px;
         }
   /*-----------------------------------Footer*/
       footer {
@@ -82,18 +83,25 @@
     color: #fafafa;
 }
 
-@media only screen and (max-width: 767px) {
-  /* For mobile phones: */
+@media (min-width: 900px) {
+  
   #map {
-    height: 180px;
+    height: 450px;
+    margin-top: 50px;
+  }
+
+@media only screen and (max-width: 767px) {
+  
+  #map {
+    height: 300px;
     margin-top: 25px;
   }
 
   @media only screen and (max-width: 425px) {
-  /* For mobile phones: */
+  
   #map {
     height: 140px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
   
 
