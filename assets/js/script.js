@@ -66,7 +66,23 @@ function initAutocomplete() {
   });
 }
 
-
 /* 
 taken out from create search box. map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 */
+
+function sendMail(contactForm) {
+    emailjs.send("gmail", "copenhagen", {
+        "from_name": contactForm.name.value,
+        "from_email": contactForm.emailaddress.value,
+        "your_query": contactForm.query.value
+    })
+    .then(
+        function(response) {
+            console.log("SUCCESS", response);
+        },
+        function(error) {
+        console.log("FAILED", error);
+        
+        });
+        return false;
+}

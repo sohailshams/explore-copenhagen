@@ -21,6 +21,11 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Explore Copenhagen</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){ emailjs.init("user_DXLBRpkIX6GuFjczJs4yR");
+     })();
+    </script>
   </head>
 
   <body>
@@ -44,94 +49,44 @@
               millions of tourist to Denmark.
             </strong>
           </p>
-          <input
-            id="pac-input"
-            class="controls"
-            type="text"
-            placeholder="Search Box"
-          />
+          <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>
         </div>
 
         <div class="col-md-8 col-lg-8">
           <div id="map"></div>
           <div class="text-center">
             <div class="col">
-              <button onclick="formFunction" type="button" class="btn btn-dark btn-lg" data-toggle="modal"
-        data-target="#basicExampleModal">
-                Trip Info
-              </button>
-              <div
-        class="modal fade"
-        id="basicExampleModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
+              <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" 
+              data-target="#basicExampleModal"> Trip Info </button>
+            <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
-                Need info about attraction, hotels or restaurants
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
+              <h5 class="modal-title" id="exampleModalLabel">Need info about attraction, hotels or restaurants</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-              <form>
+              <form onsubmit="return sendMail(this);">
                 <label for="name" class="form-title">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Name"
-                  class="form-control"
-                  required
-                />
+                <input type="text" name="name" id="name" placeholder="Name" class="form-control" required />
                 <label for="name">Email Address</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="emailaddress"
-                  placeholder="mail@abc.com"
-                  class="form-control"
-                  required
-                />
+                <input type="email" name="emailaddress" id="emailaddress" placeholder="mail@abc.com" class="form-control" required/>
                 <label for="name">Your Query</label>
-                <textarea
-                  rows="6"
-                  name="query"
-                  id="quer"
-                  placeholder="Your Question"
-                  class="form-control"
-                  required
-                ></textarea>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-dark hvr-pulse"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="submit" class="btn btn-dark hvr-pulse">
-                Contact Us
-              </button>
-            </div>
+                <textarea rows="6" name="query" id="query" placeholder="Your Question" class="form-control" required></textarea>
+              
+            
+              <button type="button" class="btn btn-dark hvr-pulse" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-dark hvr-pulse">Contact Us</button>
+            
+            </form>
           </div>
         </div>
       </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
 
@@ -181,6 +136,7 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoJlxCm-GT7Vh4EFV1K2zlBN_09lNYVmc&libraries=places&callback=initAutocomplete"
     ></script>
+    
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
