@@ -1,15 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Varela+Round&display=swap');
+
 .slogan {
     text-align: center;
     color: #fafafa;
     min-height: 80px;
     margin-top: 30px;
+    font-family: "Oswald", sans-serif;
      
+}
+
+.heading {
+     margin-top: 50px;
+     color: #fafafa;
+     font-family: "Oswald", sans-serif;
 }
 
 .text {
     margin-top: 50px;
     color: #fafafa;
-     
+    font-family: "Varela+Roun", sans-serif;
 }
 
 .image-container{
