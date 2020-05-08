@@ -89,3 +89,91 @@ function sendMail(contactForm) {
         });
         return false;
 }
+
+window.onload = function() {
+     var myArray = ["Amalienborg Palace", "National Museum", "Nyhavn", "Christianborg Palace", "Copenhagen Zoo", 
+     "The Round Tower", "Rosenborg Castle", "Tivoli Gardens", "The Little Marmaid", "Ny Carlberg Glyptotek"];
+       var index, entry;
+      for (index = 0; index < myArray.length; ++index) {
+        entry = myArray[index];
+         var node = document.createElement("OL");
+         // Backticks should look like `
+       
+        textnode = document.createTextNode(`${index+1}. ${""} ${entry}`)
+ 
+   node.appendChild(textnode);
+   console.log(node);
+   document.getElementById("attractions").appendChild(node);
+  }
+  
+}
+
+function sortFunction(){
+    getSelectValue = document.getElementById("location-selector").value;
+    if (getSelectValue == "1"){
+    $("#attractions").empty();
+      var myArray = [
+    ["Tivoli Gardens", 280],
+    ["Ny Carlberg Glyptotek", 500],
+    ["National Museum", 550],
+    ["Christianborg Palace", 1000],
+    ["Nyhavn", 1500],
+    ["Rosenborg Castle", 1600],
+    ["Amalienborg Palace", 2400],
+    ["Copenhagen Zoo", 3100],
+    ["The Little Marmaid", 3400],
+    ["The Round Tower", 800]
+];
+      
+      myArray.sort(function(a, b) {
+        return a[1] - b[1];
+      }); 
+       
+      var index, entry;
+      for (index = 0; index < myArray.length; ++index) {
+        entry = myArray[index];
+         var node = document.createElement("OL");
+         // Backticks should look like `
+       
+        textnode = document.createTextNode(`${index+1}. ${""} ${entry[0]}`)
+ 
+   node.appendChild(textnode);
+   console.log(node);
+   document.getElementById("attractions").appendChild(node);
+  }
+  
+  }
+   if (getSelectValue == "2"){
+    $("#attractions").empty();
+      var myArray = [
+    ["Tivoli Gardens", 1500],
+    ["Ny Carlberg Glyptotek", 1700],
+    ["National Museum", 1900],
+    ["Christianborg Palace", 1600],
+    ["Nyhavn", 1800],
+    ["Rosenborg Castle", 400],
+    ["Amalienborg Palace", 2500],
+    ["Copenhagen Zoo", 3900],
+    ["The Little Marmaid", 2300],
+    ["The Round Tower", 750]
+];
+      
+      myArray.sort(function(a, b) {
+        return a[1] - b[1];
+      }); 
+       
+      var index, entry;
+      for (index = 0; index < myArray.length; ++index) {
+        entry = myArray[index];
+         var node = document.createElement("OL");
+         // Backticks should look like `
+       
+        textnode = document.createTextNode(`${index+1}. ${""} ${entry[0]}`)
+ 
+   node.appendChild(textnode);
+   console.log(node);
+   document.getElementById("attractions").appendChild(node);
+  }
+  
+  };
+}

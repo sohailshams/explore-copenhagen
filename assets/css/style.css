@@ -16,11 +16,39 @@
 }
 
 .text {
-    margin-top: 50px;
     color: #fafafa;
     font-family: "Varela+Roun", sans-serif;
 }
+.location-select {
+     font-family: "Varela+Roun", sans-serif;
+     height: 25px;
+     border-radius: 5px 5px 5px 5px;
+     border: solid 1px blue;
+     margin-left: 20px;
+      padding-left: 10px;
+}
 
+ ol {
+    color:  #fafafa;
+    font-family: "Varela+Roun", sans-serif;
+    font-weight: bold;
+    padding-inline-start: 20px;
+    margin: 0px;
+    }
+attraction .attration-list li {
+   padding-left: 15px;
+}
+/*
+.attration-list li{
+    color:  #fafafa;
+    font-family: "Varela+Roun", sans-serif;
+    font-weight: bold;
+}
+
+.attration-list{
+     padding-top: 10px;
+}
+*/
 .image-container{
     height: 100vh;   
     background: url("../images/pic-10.jpg") no-repeat;

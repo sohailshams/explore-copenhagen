@@ -21,10 +21,14 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Explore Copenhagen</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-    (function(){ emailjs.init("user_DXLBRpkIX6GuFjczJs4yR");
-     })();
+      (function () {
+        emailjs.init("user_DXLBRpkIX6GuFjczJs4yR");
+      })();
     </script>
   </head>
 
@@ -32,13 +36,17 @@
     <header>
       <div class="row no-gutters">
         <div class="col-12 bg-dark">
-          <h2 class="slogan"><span><img src="assets/images/logo.png" alt="logo"></span>Let's Explore Copenhagen</h2>
+          <h2 class="slogan">
+            <span><img src="assets/images/logo.png" alt="logo" /></span>Let's
+            Explore Copenhagen
+          </h2>
         </div>
       </div>
     </header>
     <section class="container-fluid image-container">
       <div class="row">
         <div class="col-md-4 col-lg-4">
+          <h3 class="heading">History</h3>
           <p class="text text-justify">
             <strong>
               Denmark is the world's oldest kingdom. Whereas, Copenhagen is
@@ -49,55 +57,117 @@
               millions of tourist to Denmark.
             </strong>
           </p>
-          <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>
+          <input
+            id="pac-input"
+            class="controls"
+            type="text"
+            placeholder="Search Box"
+          />
         </div>
 
         <div class="col-md-8 col-lg-8">
-        <div class="row">
-        <div class="col-12 col-md-12 col-lg-6">
-        <h3 class="heading">Places to explore in Copenhagen</h3>
-        </div>
-        <div class="col-12 col-md-12 col-lg-6">
-          <div id="map"></div>
-          <div class="text-center">
-            <div class="col">
-              <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" 
-              data-target="#basicExampleModal"> Trip Info </button>
-            <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Need info about attraction, hotels or restaurants</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span></button>
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-6">
+              <h3 class="heading">Places to explore in Copenhagen</h3>
+              <select class="location-select" id="location-selector" onchange="sortFunction()">
+              <option value="0">Sort by location?</option>
+              <option value="1">City Center</option>
+              <option value="2">Nørreport Station</option>
+              </select>
+               <div id="attractions"></div>
             </div>
-            <div class="modal-body">
-              <form onsubmit="return sendMail(this);" id="form-reset">
-                <label for="name" class="form-title">Name</label>
-                <input type="text" name="name" id="name" placeholder="Name" class="form-control" required />
-                <label for="name">Email Address</label>
-                <input type="email" name="emailaddress" id="emailaddress" placeholder="mail@abc.com" class="form-control" required/>
-                <label for="name">Your Query</label>
-                <textarea rows="6" name="query" id="query" placeholder="Your Question" class="form-control" required></textarea>
-              
-            
-              <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-dark">Contact Us</button>
-            
-            </form>
+            <div class="col-12 col-md-12 col-lg-6">
+              <div id="map"></div>
+              <div class="text-center">
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-dark btn-lg"
+                    data-toggle="modal"
+                    data-target="#basicExampleModal"
+                  >
+                    Trip Info
+                  </button>
+                  <div
+                    class="modal fade"
+                    id="basicExampleModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Need info about attraction, hotels or restaurants
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form
+                            onsubmit="return sendMail(this);"
+                            id="form-reset"
+                          >
+                            <label for="name" class="form-title">Name</label>
+                            <input
+                              type="text"
+                              name="name"
+                              id="name"
+                              placeholder="Name"
+                              class="form-control"
+                              required
+                            />
+                            <label for="name">Email Address</label>
+                            <input
+                              type="email"
+                              name="emailaddress"
+                              id="emailaddress"
+                              placeholder="mail@abc.com"
+                              class="form-control"
+                              required
+                            />
+                            <label for="name">Your Query</label>
+                            <textarea
+                              rows="6"
+                              name="query"
+                              id="query"
+                              placeholder="Your Question"
+                              class="form-control"
+                              required
+                            ></textarea>
+
+                            <button
+                              type="button"
+                              class="btn btn-dark"
+                              data-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="submit" class="btn btn-dark">
+                              Contact Us
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
       </div>
     </section>
 
-<!--<div class="row">-->
+    <!--<div class="row">-->
     <footer class="container-fluid">
       <div class="row">
         <div class="col-md-4">
@@ -133,10 +203,10 @@
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </footer>
     <!--</div>-->
-<!--
+    <!--
     <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
     <script
       async
@@ -148,17 +218,17 @@
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
-    ></script> 
+    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
-    ></script> 
+    ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
-    ></script> 
+    ></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
