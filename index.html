@@ -69,12 +69,29 @@
           <div class="row">
             <div class="col-12 col-md-12 col-lg-6">
               <h3 class="heading">Places to explore in Copenhagen</h3>
-              <select class="location-select" id="location-selector" onchange="sortFunction()">
-              <option value="0">Sort by location?</option>
-              <option value="1">City Center</option>
-              <option value="2">Nørreport Station</option>
+              <select
+                class="location-select"
+                id="location-selector"
+                onchange="sortFunction()"
+              >
+                <option value="0">Sort by location?</option>
+                <option value="1">City Center</option>
+                <option value="2">Nørreport Station</option>
               </select>
-               <div id="attractions"></div>
+              <div id="attractions">
+                <ol class="location-list">
+                  <li class="loc1">Tivoli Gardens</li>
+                  <li class="loc2">Ny Carlberg Glyptotek</li>
+                  <li class="loc3">National Museum</li>
+                  <li class="loc4">Christianborg Palace</li>
+                  <li class="loc5">Nyhavn</li>
+                  <li class="loc6">Rosenborg Castle</li>
+                  <li class="loc7">Amalienborg</li>
+                  <li class="loc8">Copenhagen Zoo</li>
+                  <li class="loc9">The Little Marmaid</li>
+                  <li class="loc10">The Round Tower</li>
+                </ol>
+              </div>
             </div>
             <div class="col-12 col-md-12 col-lg-6">
               <div id="map"></div>
@@ -232,4 +249,3 @@
     <script src="assets/js/script.js"></script>
   </body>
 </html>
-

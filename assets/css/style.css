@@ -32,12 +32,32 @@
     color:  #fafafa;
     font-family: "Varela+Roun", sans-serif;
     font-weight: bold;
-    padding-inline-start: 20px;
+   
     margin: 0px;
+    margin-left: 0px;
+    padding-left: 19px;
     }
-attraction .attration-list li {
-   padding-left: 15px;
+.location-list {
+    padding-left: 37px;
+    cursor: pointer;
 }
+
+#attractions {
+    padding-top: 10px;
+}
+/*-----------------------------------Location Info in hover*/
+.location-info {
+    background-color: rgba(52, 58, 67, 0.7);
+    color: #e84610;
+    width: 140px;
+    font-size: 10px;
+    border: 1px solid;
+    font-family: "Varela+Roun", sans-serif;
+    text-align: center;
+}
+
+
+
 /*
 .attration-list li{
     color:  #fafafa;

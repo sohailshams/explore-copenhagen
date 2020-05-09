@@ -89,7 +89,7 @@ function sendMail(contactForm) {
         });
         return false;
 }
-
+/*
 window.onload = function() {
      var myArray = ["Amalienborg Palace", "National Museum", "Nyhavn", "Christianborg Palace", "Copenhagen Zoo", 
      "The Round Tower", "Rosenborg Castle", "Tivoli Gardens", "The Little Marmaid", "Ny Carlberg Glyptotek"];
@@ -102,11 +102,12 @@ window.onload = function() {
         textnode = document.createTextNode(`${index+1}. ${""} ${entry}`)
  
    node.appendChild(textnode);
-   console.log(node);
+   
    document.getElementById("attractions").appendChild(node);
   }
   
 }
+*/
 
 function sortFunction(){
     getSelectValue = document.getElementById("location-selector").value;
@@ -133,13 +134,17 @@ function sortFunction(){
       for (index = 0; index < myArray.length; ++index) {
         entry = myArray[index];
          var node = document.createElement("OL");
+       
+              node.setAttribute("id","list");  
+         
          // Backticks should look like `
        
         textnode = document.createTextNode(`${index+1}. ${""} ${entry[0]}`)
  
    node.appendChild(textnode);
-   console.log(node);
+   
    document.getElementById("attractions").appendChild(node);
+   
   }
   
   }
@@ -171,9 +176,25 @@ function sortFunction(){
         textnode = document.createTextNode(`${index+1}. ${""} ${entry[0]}`)
  
    node.appendChild(textnode);
-   console.log(node);
+   
    document.getElementById("attractions").appendChild(node);
   }
   
   };
 }
+// code for hover
+/*
+$(".loc1").hover(function(){
+    $(this).append ($ ("<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.thesquarecopenhagen.com/' target='_blank'>The Square Hotel</a> <br> <a href='https://guru.dk/' target='_blank'>Guru Restaurant</a> </div>"));
+}, function (){
+    $(this).find(".location-info").last().remove();
+    
+});
+
+$(".loc2").hover(function(){
+    $(this).append ($ ("<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://nobishotel.dk/' target='_blank'>The Square Hotel</a> <br> <a href='https://karla.nu/' target='_blank'>Guru Restaurant</a> </div>"));
+}, function (){
+    $(this).find(".location-list").last().remove();
+}
+);
+*/
