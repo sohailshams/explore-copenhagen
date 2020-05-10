@@ -57,7 +57,6 @@
 }
 
 
-
 /*
 .attration-list li{
     color:  #fafafa;
@@ -70,8 +69,8 @@
 }
 */
 .image-container{
-    height: 100vh;   
-    background: url("../images/pic-10.jpg") no-repeat;
+    height: 100vh;
+    background: url("../images/pic-10.jpg") no-repeat bottom right fixed;
     background-size: cover;
     background-position: center;
  }
@@ -108,7 +107,6 @@
   /*-----------------------------------Footer*/
       footer {
     background-color: #343a40;  
-    
     margin: 0;
     padding: 0;
 }
@@ -139,7 +137,7 @@
 .social-media-links li a i {
     color: #fafafa;
 }
-
+/*
 @media (min-width: 900px) {
   
   #map {
@@ -162,7 +160,7 @@
   }
   
 
-
+/*
 
   
 

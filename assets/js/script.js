@@ -182,19 +182,74 @@ function sortFunction(){
   
   };
 }
-// code for hover
-/*
-$(".loc1").hover(function(){
-    $(this).append ($ ("<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.thesquarecopenhagen.com/' target='_blank'>The Square Hotel</a> <br> <a href='https://guru.dk/' target='_blank'>Guru Restaurant</a> </div>"));
+// code for hover taken from https://api.jquery.com/hover/ and changed accordingly
+
+$(".t-garden").hover(function(){
+    $(this).append ($ ("<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.nimb.dk/en/hotel' target='_blank'>Nimb Hotel</a> <br> <a href='https://guru.dk/' target='_blank'>Guru Restaurant</a> </div>"));
 }, function (){
-    $(this).find(".location-info").last().remove();
+    $(".location-info").remove();
     
 });
 
-$(".loc2").hover(function(){
-    $(this).append ($ ("<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://nobishotel.dk/' target='_blank'>The Square Hotel</a> <br> <a href='https://karla.nu/' target='_blank'>Guru Restaurant</a> </div>"));
+$(".nc-glyptotek").hover(function(){
+    $(this).append ($ ("<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://nobishotel.dk/' target='_blank'>Nobis Hotel</a> <br> <a href='https://karla.nu/' target='_blank'>Restaurant Karla</a> </div>"));
 }, function (){
-    $(this).find(".location-list").last().remove();
+    $(".location-info").remove();
 }
 );
-*/
+
+$(".n-museum").hover(function(){
+    $(this).append ($ ("<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.brochner-hotels.com/hotel-danmark/' target='_blank'>Hotel Denmark</a> <br> <a href='https://www.godtfolkkbh.dk/' target='_blank'>Godt Folk Restaurant</a> </div>"));
+}, function (){
+    $(".location-info").remove();
+}
+);
+
+$(".c-palace").hover(function(){
+    $(this).append ($ ("<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.dangleterre.com/' target='_blank'>Hotel D'angleterre</a> <br> <a href='https://kadeau.dk/' target='_blank'>Kadeau Restaurant</a> </div>"));
+}, function (){
+    $(".location-info").remove();
+}
+);
+
+$(".nyhavn").hover(function(){
+    $(this).append ($ ("<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://admiralhotel.dk/' target='_blank'>Admiral Hotel</a> <br> <a href='https://www.feed.dk/' target='_blank'>Restaurant Feed Bistro</a> </div>"));
+}, function (){
+    $(".location-info").remove();
+}
+);
+
+$(".r-castle").hover(function(){
+    $(this).append ($ ("<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.phoenixcopenhagen.com/' target='_blank'>Phoenix Hotel</a> <br> <a href='https://sticksnsushi.com/en' target='_blank'>Sticks'n'Sushi</a> </div>"));
+}, function (){
+    $(".location-info").remove();
+}
+);
+
+$(".amalienborg").hover(function(){
+    $(this).append ($ ("<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://hotelsktannae.dk/' target='_blank'>Hotel Sankt Annae</a> <br> <a href='https://restaurantsanktannae.dk/' target='_blank'>Restaurant Sankt Annae</a> </div>"));
+}, function (){
+    $(".location-info").remove();
+}
+);
+
+$(".cph-zoo").hover(function(){
+    $(this).append ($ ("<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://absalon-hotel.dk/en/' target='_blank'>Absalon Hotel</a> <br> <a href='https://www.bistropanpan.dk/' target='_blank'>Bistro Panpan</a> </div>"));
+}, function (){
+    $(".location-info").remove();
+}
+);
+
+$(".tl-marmaid").hover(function(){
+    $(this).append ($ ("<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.adinahotels.com/en/apartments/copenhagen/' target='_blank'>Absalon Hotel</a> <br> <a href='https://toldboden.com/' target='_blank'>Restaurant Tolboden</a> </div>"));
+}, function (){
+    $(".location-info").remove();
+}
+);
+
+$(".tr-tower").hover(function(){
+    $(this).append ($ ("<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.sktpetri.com/' target='_blank'>Hotel SKT. Petri</a> <br> <a href='http://www.restaurant-naert.dk/' target='_blank'>Restaurant Naert</a> </div>"));
+}, function (){
+    $(".location-info").remove();
+}
+);
