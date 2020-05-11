@@ -1,166 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Varela+Round&display=swap");
 
 /*---------------------------Background image*/
 
-.image-container{
-    height:auto;
-    padding-bottom: 50px;
-    background: url("../images/pic-10.jpg") no-repeat bottom right fixed;
-    background-size: cover;
-    background-position: center;
-    min-height: 700px;
- }
+.image-container {
+  height: auto;
+  padding-bottom: 50px;
+  background: url("../images/pic-10.jpg") no-repeat bottom right fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+}
 
 /*---------------------------Text & heading styling*/
 .navbar-heading {
-    text-align: center;
-    color: #fafafa;
-    min-height: 80px;
-    margin-top: 30px;
-    font-family: "Oswald", sans-serif;   
+  text-align: center;
+  color: #fafafa;
+  min-height: 80px;
+  margin-top: 30px;
+  font-family: "Oswald", sans-serif;
 }
 
 .his-heading {
-    margin-top: 50px;
-    color: #e84610;
-    font-family: "Oswald", sans-serif;
-    font-weight: bold;
+  margin-top: 50px;
+  color: #e84610;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
 }
 
 .text {
-    color: #fafafa;
-    font-family: "Varela+Roun", sans-serif;
-    font-weight: bold;
+  color: #fafafa;
+  font-family: "Varela+Roun", sans-serif;
+  font-weight: bold;
 }
 
 .att-heading {
-    margin-top: 50px;
-    color: #e84610;
-    padding-left: 18px;
-    font-family: "Oswald", sans-serif;
-    font-weight: bold;
+  margin-top: 50px;
+  color: #e84610;
+  padding-left: 18px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
 }
 
- ol {
-    color:  #fafafa;
-    font-family: "Varela+Roun", sans-serif;
-    font-weight: bold;
-    margin: 0px;
-    margin-left: 0px;
-    padding-left: 19px;
-    }
+ol {
+  color: #fafafa;
+  font-family: "Varela+Roun", sans-serif;
+  font-weight: bold;
+  margin: 0px;
+  margin-left: 0px;
+  padding-left: 19px;
+}
 .location-list {
-    padding-left: 37px;
-    cursor: pointer;
+  padding-left: 37px;
+  cursor: pointer;
 }
 
 #attractions {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 /*---------------------------Attractions list-hover styling*/
 .location-info {
-    background-color: rgba(52, 58, 67, 0.7);
-    color: #e84610;
-    width: 140px;
-    font-size: 10px;
-    border: 1px solid;
-    font-family: "Varela+Roun", sans-serif;
-    text-align: center;
+  background-color: rgba(52, 58, 67, 0.7);
+  color: #e84610;
+  width: 140px;
+  font-size: 10px;
+  border: 1px solid;
+  font-family: "Varela+Roun", sans-serif;
+  text-align: center;
 }
 
- /* Always set the map height to define the size of the div element that contains the map. */
+/* Always set the map height to define the size of the div element that contains the map. */
 
 #map {
-  height:80%;
+  height: 80%;
   background-size: cover;
   margin-top: 15px;
 }
 
 /*---------------------------Button, search bar and selection bar*/
-#pac-input {
-    background-color: #e84610;
-    color: #fafafa;
-    font-family: "Varela+Roun", sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    padding: 0 11px 0 13px;
-    text-overflow: ellipsis;
-    width: 200px;
-    border-radius: 5px 5px 5px 5px;
-    border: solid 1px blue;
-    height: 25px;
-    margin-top: 50px;
-}
 
+#pac-input {
+  background-color: #e84610;
+  color: #fafafa;
+  font-family: "Varela+Roun", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 200px;
+  border-radius: 5px 5px 5px 5px;
+  border: solid 1px blue;
+  height: 30px;
+  margin-top: 50px;
+}
+::placeholder {
+  color: #fafafa;
+}
 .location-select {
-    font-family: "Varela+Roun", sans-serif;
-    height: 25px;
-    border-radius: 5px 5px 5px 5px;
-    border: solid 1px blue;
-    margin-left: 20px;
-    padding-left: 10px;
-    background-color: #e84610;
-    color: #fafafa;
+  font-family: "Varela+Roun", sans-serif;
+  height: 30px;
+  border-radius: 5px 5px 5px 5px;
+  border: solid 1px blue;
+  margin-left: 20px;
+  padding-left: 10px;
+  background-color: #e84610;
+  color: #fafafa;
+  width: 200px;
 }
 
 .btn {
-    background-color: #e84610;
-    font-family: "Varela+Roun", sans-serif; 
-    font-size: 15px;
-    font-weight: bold;
-           
+  background-color: #e84610;
+  font-family: "Varela+Roun", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 /*-----------------------------------Footer*/
-      footer {
-    background-color: #343a40;  
-    margin: 0;
-    padding: 0;
+footer {
+  background-color: #343a40;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-items {
-    font-family: "Varela+Roun", sans-serif;
-    max-height: 150px;
-    text-align: center;
-    margin-top: 30px;
-    color: #fafafa;
-
+  font-family: "Varela+Roun", sans-serif;
+  max-height: 150px;
+  text-align: center;
+  margin-top: 30px;
+  color: #fafafa;
 }
 
 .social-media-links i {
-    font-size: 150%;
-    
-  }
+  font-size: 150%;
+}
 
 .footer-links ul {
-    padding-left: 0;
-    text-align: center;
+  padding-left: 0;
+  text-align: center;
 }
 
 .social-media-links li a i {
-    color: #fafafa;
+  color: #fafafa;
 }
 /*-----------------------------------media queries*/
 
 @media (min-width: 769px) {
-  
   #map {
     height: 425px;
   }
 }
-@media(max-width: 767px) {
-  
-  .his-heading{
-   padding-top: 15px;
+@media (max-width: 767px) {
+  .his-heading {
+    padding-top: 15px;
   }
 
-  .att-heading{
-   padding-top: 15px;
+  .att-heading {
+    padding-top: 15px;
   }
 
   #pac-input {
-      margin-top: 15px;
+    margin-top: 15px;
   }
 
   #map {
@@ -169,12 +168,66 @@
   }
 }
 
-  
+@media (max-width: 425px) {
+  .search-bar {
+    padding-left: 18px;
+  }
+}
 
+@media (min-width: 2550px) {
+  .navbar-heading {
+    font-size: 50px;
+  }
+  .his-heading {
+    font-size: 45px;
+    padding-left: 15px;
+    margin-top: 70px;
+  }
+  .text {
+    font-size: 30px;
+    padding-left: 15px;
+    margin-top: 20px;
+  }
 
+  .btn {
+    font-size: 25px;
+  }
+  .col {
+    padding-top: 30px;
+  }
 
-  
+  .att-heading {
+    font-size: 45px;
+    padding-left: 15px;
+    margin-top: 70px;
+  }
 
+  .location-info {
+    font-size: 30px;
+    width: 300px;
+    border: 2px solid;
+  }
+  .location-select {
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+  }
+  ol {
+    font-size: 30px;
+  }
+  #pac-input {
+    font-size: 30px;
+    width: 300px;
+    height: 50px;
+    margin-top: 70px;
+  }
+  #map {
+    margin-top: 20px;
+    height: 75%;
+    padding-right: 20px;
+  }
 
-  
- 
+  .footer-items {
+    font-size: 38px;
+  }
+}
