@@ -175,11 +175,19 @@ footer {
 }
 
 @media (min-width: 2550px) {
-  .navbar-heading {
-    font-size: 50px;
+  .image-container {
+    min-height: 1000px;
   }
+  .bg-dark {
+    min-height: 200px;
+  }
+  .navbar-heading {
+    font-size: 65px;
+    margin-top: 40px;
+  }
+
   .his-heading {
-    font-size: 45px;
+    font-size: 50px;
     padding-left: 15px;
     margin-top: 70px;
   }
@@ -190,27 +198,42 @@ footer {
   }
 
   .btn {
+    font-size: 30px;
+    height: 80px;
+  }
+
+  .modal-title {
+    font-size: 30px;
+  }
+  .modal-content {
+    font-size: 30px;
+    width: 700px;
+  }
+
+  .form-control {
     font-size: 25px;
   }
+
   .col {
     padding-top: 30px;
   }
 
   .att-heading {
-    font-size: 45px;
+    font-size: 50px;
     padding-left: 15px;
     margin-top: 70px;
   }
 
   .location-info {
-    font-size: 30px;
-    width: 300px;
+    font-size: 25px;
+    width: 350px;
     border: 2px solid;
   }
   .location-select {
     height: 50px;
-    width: 300px;
+    width: 200px;
     margin-top: 20px;
+    zoom: 1.3;
   }
   ol {
     font-size: 30px;
@@ -223,8 +246,9 @@ footer {
   }
   #map {
     margin-top: 20px;
-    height: 75%;
+    height: 600px;
     padding-right: 20px;
+    zoom: 120%;
   }
 
   .footer-items {
