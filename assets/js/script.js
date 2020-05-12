@@ -1,4 +1,5 @@
-
+$(document).ready(function(){
+  //-----------------Code from Google map api documentation
 function initAutocomplete() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 55.6761, lng: 12.5683},
@@ -69,6 +70,7 @@ function initAutocomplete() {
 /* 
 taken out from create search box. map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 */
+//-----------------CI tutorials helped alot to write this code
 
 function sendMail(contactForm) {
     emailjs.send("gmail", "copenhagen", {
@@ -108,7 +110,7 @@ window.onload = function() {
   
 }
 */
-
+//-----------------Took some code from Stack Overflow CI tutorials Tutor help
 function sortFunction(){
     getSelectValue = document.getElementById("location-selector").value;
     if (getSelectValue == "1"){
@@ -182,7 +184,7 @@ function sortFunction(){
   
   };
 }
-// code for hover taken from https://api.jquery.com/hover/ and changed accordingly
+//-----------------code for hover taken from https://api.jquery.com/hover/ and changed accordingly
 
 
 $(".t-garden").hover(function(){
@@ -254,3 +256,4 @@ $(".tr-tower").hover(function(){
     $(".location-info").remove();
 }
 );
+});
