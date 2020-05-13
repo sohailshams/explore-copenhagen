@@ -68,9 +68,6 @@ function initAutocomplete() {
   });
 }
 
-/* 
-taken out from create search box. map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-*/
 //-----------------CI tutorials helped alot to write this code
 
 function sendMail(contactForm) {
@@ -96,7 +93,6 @@ function sendMail(contactForm) {
             $("#send-message").show().hide();
           }, 5000);
         });
-        
       },
       function (error) {
         console.log("FAILED", error);
@@ -105,41 +101,49 @@ function sendMail(contactForm) {
   return false;
 }
 
-/*
-window.onload = function() {
-     var myArray = ["Amalienborg Palace", "National Museum", "Nyhavn", "Christianborg Palace", "Copenhagen Zoo", 
-     "The Round Tower", "Rosenborg Castle", "Tivoli Gardens", "The Little Marmaid", "Ny Carlberg Glyptotek"];
-       var index, entry;
-      for (index = 0; index < myArray.length; ++index) {
-        entry = myArray[index];
-         var node = document.createElement("OL");
-         // Backticks should look like `
-       
-        textnode = document.createTextNode(`${index+1}. ${""} ${entry}`)
- 
-   node.appendChild(textnode);
-   
-   document.getElementById("attractions").appendChild(node);
-  }
-  
-}
-*/
-//-----------------Took some code from Stack Overflow CI tutorials Tutor help
+//-----------------Took some code from Stack Overflow CI tutorials, Tutor help and changed accordingly
 function sortFunction() {
   getSelectValue = document.getElementById("location-selector").value;
+  if (getSelectValue == "0") {
+    $("#attractions").empty();
+    var myArray = [
+      ["Christianborg Palace", "c-palace"],
+      ["Ny Carlberg Glyptotek", "nc-glyptotek"],
+      ["The Round Tower", "tr-tower"],
+      ["Tivoli Gardens", "t-garden"],
+      ["Copenhagen Zoo", "cph-zoo"],
+      ["National Museum", "n-museum"],
+      ["Rosenborg Castle", "r-castle"],
+      ["Amalienborg Palace", "amalienborg"],
+      ["Nyhavn", "nyhavn"],
+      ["The Little Marmaid", "tl-marmaid"],
+    ];
+    var index, entry;
+    var olist = document.createElement("OL");
+    olist.setAttribute("class", "location-list");
+    for (index = 0; index < myArray.length; ++index) {
+      entry = myArray[index];
+      var node = document.createElement("LI");
+      node.setAttribute("class", entry[1]);
+      textnode = document.createTextNode(`${entry[0]}`);
+      node.appendChild(textnode);
+      olist.appendChild(node);
+      document.getElementById("attractions").appendChild(olist);
+    }
+  }
   if (getSelectValue == "1") {
     $("#attractions").empty();
     var myArray = [
-      ["Tivoli Gardens", 280],
-      ["Ny Carlberg Glyptotek", 500],
-      ["National Museum", 550],
-      ["Christianborg Palace", 1000],
-      ["Nyhavn", 1500],
-      ["Rosenborg Castle", 1600],
-      ["Amalienborg Palace", 2400],
-      ["Copenhagen Zoo", 3100],
-      ["The Little Marmaid", 3400],
-      ["The Round Tower", 800],
+      ["Tivoli Gardens", 280, "t-garden"],
+      ["Ny Carlberg Glyptotek", 500, "nc-glyptotek"],
+      ["National Museum", 550, "n-museum"],
+      ["Christianborg Palace", 1000, "c-palace"],
+      ["Nyhavn", 1500, "nyhavn"],
+      ["Rosenborg Castle", 1600, "r-castle"],
+      ["Amalienborg Palace", 2400, "amalienborg"],
+      ["Copenhagen Zoo", 3100, "cph-zoo"],
+      ["The Little Marmaid", 3400, "tl-marmaid"],
+      ["The Round Tower", 800, "tr-tower"],
     ];
 
     myArray.sort(function (a, b) {
@@ -147,32 +151,31 @@ function sortFunction() {
     });
 
     var index, entry;
+    var olist = document.createElement("OL");
+    olist.setAttribute("class", "location-list");
     for (index = 0; index < myArray.length; ++index) {
       entry = myArray[index];
-      var node = document.createElement("OL");
-
-      // Backticks should look like `
-
-      textnode = document.createTextNode(`${index + 1}. ${""} ${entry[0]}`);
-
+      var node = document.createElement("LI");
+      node.setAttribute("class", entry[2]);
+      textnode = document.createTextNode(`${entry[0]}`);
       node.appendChild(textnode);
-
-      document.getElementById("attractions").appendChild(node);
+      olist.appendChild(node);
+      document.getElementById("attractions").appendChild(olist);
     }
   }
   if (getSelectValue == "2") {
     $("#attractions").empty();
     var myArray = [
-      ["Tivoli Gardens", 1500],
-      ["Ny Carlberg Glyptotek", 1700],
-      ["National Museum", 1900],
-      ["Christianborg Palace", 1600],
-      ["Nyhavn", 1800],
-      ["Rosenborg Castle", 400],
-      ["Amalienborg Palace", 2500],
-      ["Copenhagen Zoo", 3900],
-      ["The Little Marmaid", 2300],
-      ["The Round Tower", 750],
+      ["Tivoli Gardens", 1500, "t-garden"],
+      ["Ny Carlberg Glyptotek", 1700, "nc-glyptotek"],
+      ["National Museum", 1900, "n-museum"],
+      ["Christianborg Palace", 1600, "c-palace"],
+      ["Nyhavn", 1800, "nyhavn"],
+      ["Rosenborg Castle", 400, "r-castle"],
+      ["Amalienborg Palace", 2500, "amalienborg"],
+      ["Copenhagen Zoo", 3900, "cph-zoo"],
+      ["The Little Marmaid", 2300, "tl-marmaid"],
+      ["The Round Tower", 750, "tr-tower"],
     ];
 
     myArray.sort(function (a, b) {
@@ -180,148 +183,149 @@ function sortFunction() {
     });
 
     var index, entry;
+    var olist = document.createElement("OL");
+    olist.setAttribute("class", "location-list");
     for (index = 0; index < myArray.length; ++index) {
       entry = myArray[index];
-      var node = document.createElement("OL");
-      // Backticks should look like `
-
-      textnode = document.createTextNode(`${index + 1}. ${""} ${entry[0]}`);
-
+      var node = document.createElement("LI");
+      node.setAttribute("class", entry[2]);
+      textnode = document.createTextNode(`${entry[0]}`);
       node.appendChild(textnode);
-
-      document.getElementById("attractions").appendChild(node);
+      olist.appendChild(node);
+      document.getElementById("attractions").appendChild(olist);
     }
   }
 }
 //-----------------code for hover taken from https://api.jquery.com/hover/ and changed accordingly
+function hoverFunction() {
+  $(".t-garden").hover(
+    function () {
+      $(this).append(
+        $(
+          "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.nimb.dk/en/hotel' target='_blank'>Nimb Hotel</a> <br> <a href='https://guru.dk/' target='_blank'>Guru Restaurant</a> </div>"
+        )
+      );
+    },
+    function () {
+      $(".location-info").remove();
+    }
+  );
 
-$(".t-garden").hover(
-  function () {
-    $(this).append(
-      $(
-        "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.nimb.dk/en/hotel' target='_blank'>Nimb Hotel</a> <br> <a href='https://guru.dk/' target='_blank'>Guru Restaurant</a> </div>"
-      )
-    );
-  },
-  function () {
-    $(".location-info").remove();
-  }
-);
+  $(".nc-glyptotek").hover(
+    function () {
+      $(this).append(
+        $(
+          "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://nobishotel.dk/' target='_blank'>Nobis Hotel</a> <br> <a href='https://karla.nu/' target='_blank'>Restaurant Karla</a> </div>"
+        )
+      );
+    },
+    function () {
+      $(".location-info").remove();
+    }
+  );
 
-$(".nc-glyptotek").hover(
-  function () {
-    $(this).append(
-      $(
-        "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://nobishotel.dk/' target='_blank'>Nobis Hotel</a> <br> <a href='https://karla.nu/' target='_blank'>Restaurant Karla</a> </div>"
-      )
-    );
-  },
-  function () {
-    $(".location-info").remove();
-  }
-);
+  $(".n-museum").hover(
+    function () {
+      $(this).append(
+        $(
+          "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.brochner-hotels.com/hotel-danmark/' target='_blank'>Hotel Denmark</a> <br> <a href='https://www.godtfolkkbh.dk/' target='_blank'>Godt Folk Restaurant</a> </div>"
+        )
+      );
+    },
+    function () {
+      $(".location-info").remove();
+    }
+  );
 
-$(".n-museum").hover(
-  function () {
-    $(this).append(
-      $(
-        "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.brochner-hotels.com/hotel-danmark/' target='_blank'>Hotel Denmark</a> <br> <a href='https://www.godtfolkkbh.dk/' target='_blank'>Godt Folk Restaurant</a> </div>"
-      )
-    );
-  },
-  function () {
-    $(".location-info").remove();
-  }
-);
+  $(".c-palace").hover(
+    function () {
+      $(this).append(
+        $(
+          "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.dangleterre.com/' target='_blank'>Hotel D'angleterre</a> <br> <a href='https://kadeau.dk/' target='_blank'>Kadeau Restaurant</a> </div>"
+        )
+      );
+    },
+    function () {
+      $(".location-info").remove();
+    }
+  );
 
-$(".c-palace").hover(
-  function () {
-    $(this).append(
-      $(
-        "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.dangleterre.com/' target='_blank'>Hotel D'angleterre</a> <br> <a href='https://kadeau.dk/' target='_blank'>Kadeau Restaurant</a> </div>"
-      )
-    );
-  },
-  function () {
-    $(".location-info").remove();
-  }
-);
+  $(".nyhavn").hover(
+    function () {
+      $(this).append(
+        $(
+          "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://admiralhotel.dk/' target='_blank'>Admiral Hotel</a> <br> <a href='https://www.feed.dk/' target='_blank'>Restaurant Feed Bistro</a> </div>"
+        )
+      );
+    },
+    function () {
+      $(".location-info").remove();
+    }
+  );
 
-$(".nyhavn").hover(
-  function () {
-    $(this).append(
-      $(
-        "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://admiralhotel.dk/' target='_blank'>Admiral Hotel</a> <br> <a href='https://www.feed.dk/' target='_blank'>Restaurant Feed Bistro</a> </div>"
-      )
-    );
-  },
-  function () {
-    $(".location-info").remove();
-  }
-);
+  $(".r-castle").hover(
+    function () {
+      $(this).append(
+        $(
+          "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.phoenixcopenhagen.com/' target='_blank'>Phoenix Hotel</a> <br> <a href='https://sticksnsushi.com/en' target='_blank'>Sticks'n'Sushi</a> </div>"
+        )
+      );
+    },
+    function () {
+      $(".location-info").remove();
+    }
+  );
 
-$(".r-castle").hover(
-  function () {
-    $(this).append(
-      $(
-        "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.phoenixcopenhagen.com/' target='_blank'>Phoenix Hotel</a> <br> <a href='https://sticksnsushi.com/en' target='_blank'>Sticks'n'Sushi</a> </div>"
-      )
-    );
-  },
-  function () {
-    $(".location-info").remove();
-  }
-);
+  $(".amalienborg").hover(
+    function () {
+      $(this).append(
+        $(
+          "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://hotelsktannae.dk/' target='_blank'>Hotel Sankt Annae</a> <br> <a href='https://restaurantsanktannae.dk/' target='_blank'>Restaurant Sankt Annae</a> </div>"
+        )
+      );
+    },
+    function () {
+      $(".location-info").remove();
+    }
+  );
 
-$(".amalienborg").hover(
-  function () {
-    $(this).append(
-      $(
-        "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://hotelsktannae.dk/' target='_blank'>Hotel Sankt Annae</a> <br> <a href='https://restaurantsanktannae.dk/' target='_blank'>Restaurant Sankt Annae</a> </div>"
-      )
-    );
-  },
-  function () {
-    $(".location-info").remove();
-  }
-);
+  $(".cph-zoo").hover(
+    function () {
+      $(this).append(
+        $(
+          "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://absalon-hotel.dk/en/' target='_blank'>Absalon Hotel</a> <br> <a href='https://www.bistropanpan.dk/' target='_blank'>Bistro Panpan</a> </div>"
+        )
+      );
+    },
+    function () {
+      $(".location-info").remove();
+    }
+  );
 
-$(".cph-zoo").hover(
-  function () {
-    $(this).append(
-      $(
-        "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://absalon-hotel.dk/en/' target='_blank'>Absalon Hotel</a> <br> <a href='https://www.bistropanpan.dk/' target='_blank'>Bistro Panpan</a> </div>"
-      )
-    );
-  },
-  function () {
-    $(".location-info").remove();
-  }
-);
+  $(".tl-marmaid").hover(
+    function () {
+      $(this).append(
+        $(
+          "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.adinahotels.com/en/apartments/copenhagen/' target='_blank'>Adina Apartment Hotel</a> <br> <a href='https://toldboden.com/' target='_blank'>Restaurant Tolboden</a> </div>"
+        )
+      );
+    },
+    function () {
+      $(".location-info").remove();
+    }
+  );
 
-$(".tl-marmaid").hover(
-  function () {
-    $(this).append(
-      $(
-        "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.adinahotels.com/en/apartments/copenhagen/' target='_blank'>Absalon Hotel</a> <br> <a href='https://toldboden.com/' target='_blank'>Restaurant Tolboden</a> </div>"
-      )
-    );
-  },
-  function () {
-    $(".location-info").remove();
-  }
-);
-
-$(".tr-tower").hover(
-  function () {
-    $(this).append(
-      $(
-        "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.sktpetri.com/' target='_blank'>Hotel SKT. Petri</a> <br> <a href='http://www.restaurant-naert.dk/' target='_blank'>Restaurant Naert</a> </div>"
-      )
-    );
-  },
-  function () {
-    $(".location-info").remove();
-  }
-);
+  $(".tr-tower").hover(
+    function () {
+      $(this).append(
+        $(
+          "<div class='location-info'><span class='nearest-places'>Nearest Hotel & Restaurant</span> <br><a href='https://www.sktpetri.com/' target='_blank'>Hotel SKT. Petri</a> <br> <a href='http://www.restaurant-naert.dk/' target='_blank'>Restaurant Naert</a> </div>"
+        )
+      );
+    },
+    function () {
+      $(".location-info").remove();
+    }
+  );
+}
 //});
