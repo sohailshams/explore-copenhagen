@@ -1,39 +1,38 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Explore Copenhagen
 
-Welcome sohailshams,
+## Interactive Frontend Development Milestone Project
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+## Project Description
 
-## Gitpod Reminders
+Explore Copenhagen is designed to be an informative website. The website contains a list of top attractions in the city
+Copenhagen, Denmark as well as it is also linked to a Google Places API. It is possible to sort these top attractions by their 
+distance from two main locations of the city. Further user can also search for any other attraction by using Google Places API.
+The website also provide information about the nearest hotel and restaurant when hovering over the list of top attractions.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# UX
 
-`python3 -m http.server`
+Explore Copenhagen is designed and developed to assist the tourists / travellers to plan and explore their trip to the city of 
+Copenhagen, Denmark. Copenhagen, Denmark is a popular tourist destination. Copenhagen airpirt traffic for year 2019
+was 30.3 million passengers. Whereas, over 1.5 million tourists stayed over night at Copenhagen city. The design of the website
+is kept simple as it consist of one page. 
 
-A blue button should appear to click: *Make Public*,
+### User Stories
 
-Another blue button should appear to click: *Open Browser*.
+1. As a user I want to know the history of Denmark.
+2. As a user I would like to see a list of top attractions in city Copenhagen.
+3. As a user I would like to see nearest hotel to these top attractions in city Copenhagen.
+4. As a user I would like to see nearest restaurant to these top attractions in city Copenhagen.
+5. As a user I would like to sort these attractions by distance from city center.
+6. As a user I would like to sort these attractions by distance from a train / metro station.
+7. As a user I would like to search for attractions by Google seach.
+8. As a user I would like to search for restaurants using Google search.
+9. As a user I would like to search for restaurants using Google search.
+10. As a user I would like to contact the admin for more information.
+11. As a user I would like to see a confirmation that my message has been sent.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#### Attribute
+1. When a user hover over attractions list a new window appears that contains information about nearest hotel and restaurant.
+2. Hover effect hvr-pulse has been used in social links and contact me button.
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
