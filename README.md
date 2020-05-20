@@ -1,6 +1,6 @@
 # Explore Copenhagen
 
-## Interactive Frontend Development Milestone Project
+## Interactive Frontend Development Milestone Project-2
 
 ## Project Description
 
@@ -70,5 +70,18 @@ Wireframes are created using balsamiq. Link to the wireframes and PDF file is av
 website is the same for desktop and tablet however on mobile screen the content will be re-arranged. The user will move from 
 top to the bottom. 
 
+## Features
+
+Key features of the website are;
+- Background-Picture (A picture of Christianborg Palace from where the Danish Govenment it business cover the entire page.)
+- History (A very brief history of Copenhagen and Denmark that will get user interest)
+- Top attracions in Copenhagen (A list of to attracions)
+- Sort by locations (A dropdown button that allow users to sort the attracions by distance from city center and Nørrepert station)
+- Search bar and Google Map (It allows user to look for any other attracion, hotel or restaurant)
+- Plan your Trip (It allow users to get in touch with admin for any information)
+- Message Sent (This confirmation message will pop up under plan your trip when user will send his query)
+- Social Media (Links to the social media profiles of Explore Copenhagen, which I have not given yet)
+
+## Features Left to Implement
 
 
