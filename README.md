@@ -31,8 +31,17 @@ is kept simple as it consist of one page.
 11. As a user I would like to see a confirmation that my message has been sent.
 
 #### Attribute
+
+1. The target_blank value is given to all the links of hotel and restaurant so that they will open in a new tab / window on clicking.
+2. The required attribute is used in name, email and your query fields to make sure that user fill in all the fiels before sending his query.
+
+#### Hover Effect
+
 1. When a user hover over attractions list a new window appears that contains information about nearest hotel and restaurant.
 2. Hover effect hvr-pulse has been used in social links and contact me button.
 
+## Wireframes
+- [Link to Wireframes](https://balsamiq.cloud/sisqdsv/pd59mcb/r2278) 
+- [Wireframes in PDF](assets/wireframes/wireframes.pdf)
 
 
