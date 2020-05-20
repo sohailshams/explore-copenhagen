@@ -21,11 +21,8 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Explore Copenhagen</title>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script>
       (function () {
         emailjs.init("user_DXLBRpkIX6GuFjczJs4yR");
       })();
@@ -155,15 +152,9 @@
                 id="location-selector"
                 onchange="sortFunction();hoverFunction()"
               >
-                <option value="0"
-                  ><span class="sort-text">Sort by location?</span></option
-                >
-                <option value="1"
-                  ><span class="sort-text">City Center</span></option
-                >
-                <option value="2"
-                  ><span class="sort-text">Nørreport Station</span></option
-                >
+                <option value="0">Sort by location?</option>
+                <option value="1">City Center</option>
+                <option value="2">Nørreport Station</option>
               </select>
               <div id="attractions">
                 <ol class="location-list">
@@ -196,7 +187,6 @@
       </div>
     </section>
 
-    <!--<div class="row">-->
     <footer class="container-fluid">
       <div class="row">
         <div class="col-md-4">
@@ -234,7 +224,6 @@
         </div>
       </div>
     </footer>
-    <!--</div>-->
 
     <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
     <script
