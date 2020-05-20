@@ -89,3 +89,21 @@ Key features of the website are;
 - Social medial profiles of Explore Copenhagen will be added in future.
 - I would like to add, hire a local guide feature in future.
 
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- JQuery
+- JSON
+- [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorial)
+- [Bootstrap Framework](https://getbootstrap.com/)
+  Bootstrap grid is used in the project.
+- [Googlefonts](https://fonts.google.com/) 
+  Google fonts Oswald and Varela+Round are used in the project.
+- [FontAwesome](https://fontawesome.com/v4.7.0/icons/) 
+  Fontawesome icons are used in the project. 
+- [Hover.css](https://ianlunn.github.io/Hover/)
+  Hover effects are also used in the project.
+- [github](https://github.com/)
+  Used for version control.
+- [gitpod](https://www.gitpod.io/)
