@@ -84,4 +84,8 @@ Key features of the website are;
 
 ## Features Left to Implement
 
+- In future I want to add a gallery which contains pictures of the attractions with an audio description.
+- I also want to add a feature of sort by geolocation meaning that user can sort the top attracions from his current location.
+- Social medial profiles of Explore Copenhagen will be added in future.
+- I would like to add, hire a local guide feature in future.
 
