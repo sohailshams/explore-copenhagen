@@ -25,7 +25,7 @@ is kept simple as it consist of one page.
 5. As a user I would like to sort these attractions by distance from city center.
 6. As a user I would like to sort these attractions by distance from a train / metro station.
 7. As a user I would like to search for attractions by Google seach.
-8. As a user I would like to search for restaurants using Google search.
+8. As a user I would like to search for hotels using Google search.
 9. As a user I would like to search for restaurants using Google search.
 10. As a user I would like to contact the admin for more information.
 11. As a user I woould like to see a confirmation that my message has been sent.
@@ -107,3 +107,69 @@ Key features of the website are;
 - [github](https://github.com/)
   Used for version control.
 - [gitpod](https://www.gitpod.io/)
+
+## Testing
+
+The code has been validated by using;
+
+- [W3C Markup Validation Service](https://validator.w3.org/)
+- [W3C Markup Validation Service](https://jigsaw.w3.org/css-validator/)
+- [JSHint](https://jshint.com/)
+
+Further the testing of the project has been carried out from the beginning using google developer tools.
+User stories from the UX section were tested to ensure that they all work as intended, with the project providing an 
+easy and straightforward way for the users to achieve their goals.
+1. *As a user I want to know the history of Denmark.*
+- Go to the top left corner under **History** heading.
+2. *As a user I would like to see a list of top attractions in city Copenhagen.*
+- Go to the middle of the page a list is placed under **Sort by location dropdown button**.
+3. *As a user I would like to see nearest hotel to these top attractions in city Copenhagen.*
+- Hover over any attracion under **Sort by location dropdown button** a pop up window will open and show nearest hotel to that attracion.
+4. *As a user I would like to see nearest restaurant to these top attractions in city Copenhagen.*
+- Hover over any attracion under **Sort by location dropdown button** a pop up window will open and show nearest restaurant to that attracion.
+5. *As a user I would like to sort these attractions by distance from city center.*
+- Click on the **Sort by location dropdown button** and choose City Center.
+6. *As a user I would like to sort these attractions by distance from a train / metro station.*
+- Click on the **Sort by location dropdown button** and choose Nørrepert Station.
+7. *As a user I would like to search for attractions by Google seach.*
+- Go to the search box in the top right side of the page and search for attractions 
+  and attraction markers will appear in google maps.
+8. *As a user I would like to search for hotels using Google search.*
+- Go to the search box in the top right side of the page and search for hotels 
+  and hotel markers will appear in google maps.
+9. *As a user I would like to search for restaurants using Google search.*
+- Go to the search box in the top right side of the page and search for restaurants 
+  and restaurant markers will appear in google maps.
+10. *As a user I would like to contact the admin for more information.*
+- Click on **Plan Your Trip** under **History** heading a new window will open. Fill the form and click on Contact Us.
+11. *As a user I woould like to see a confirmation that my message has been sent.*
+- After clicking the **Contact Us** a confirmation message will appear under-neath **Plan Your Trip**
+
+Required attribute is added in all fields of the plan your trip form like name, emailaddress and your quey.
+If any field left empty it will be notified. User will be unable to send the form unless all fields are filled.
+Further if wrong email is entered, it will also be notified.
+
+### Different browsers & Mobiles
+
+The website has been tested on following web browsers and mobiles, and website looks fine and work properly on it.
+For screen sizes 768px and above the page is divided into three sections History, Top Attraction and Serarch box plus Google Map.
+Whereas for small screen sizes every thing turns into one section andsits on top of eachother.
+- Google Chroome
+- Microsoft Edge
+- firefox
+- Opera 
+- iPhone 6
+- Iphone 8
+- Huawei P30 lite
+
+### Media Queries
+
+Bootstrap has been used to make website responsive but separate media queries has been written to set the map height on different 
+screen sizes. For screen sizes like 4k-2560px a media query is also written so that website look nice on big screens as well.
+
+### Interesting Bugs
+During testing I found an interesting bug. Actually I have a hover function on attraction list and I disabled it for small 
+screens less than 768px. The bug was when I was selecting small screen from large screen this hover was not disabling until, 
+I refresh the page or I select any location from the dropdown button. It happened to be the same when I was moving from small 
+screen size to bigger than 768px, hover function was not activating until, I refresh the page or I select any location from 
+the dropdown button. Luckily I found out that I need to put if statement inside each hover function and it worked.
