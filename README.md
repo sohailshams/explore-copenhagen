@@ -193,10 +193,13 @@ Following steps has been taken to deploy my project Explore Copenhagen on GitHub
 
 - [The picture in the background has been taken from Google](https://www.google.com/)
 
-### Acknoledgements
+### Acknowledgements
 1. A special thanks to my mentor **Ashish Srivastava** for his valuable feedback during mentoring sessions.
 2. Google Maps API code has been taken from [Google API Documentation](https://developers.google.com/maps/documentation/javascript/tutorial?hl=es-419)
 3. The design and layout of this website is based on the Rule of Thirds which I also used in my previous project.
 4. Code Institute tutor support has been a great support during the whole project, a very special thanks to tutor support.
 5. Besides tutor support [Stack overflow](https://stackoverflow.com/) and [Jquery](https://jquery.com/) were great source of help.
 6. Code Institute tutorial were very helpful to link contact form with emailjs.
+7. Code for the footer section, I used it from my previous project.
+8. Bootstrap is also used in the project. (Bootstrap grid, Bootstrap Moodle and Bootstrap classes)
+9. A very special thanks to my lovely wife my sons Ibrahim and Ismail for their support and motivation.
