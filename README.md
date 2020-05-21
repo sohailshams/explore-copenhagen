@@ -184,6 +184,17 @@ Following steps has been taken to deploy my project Explore Copenhagen on GitHub
 4. Click on **dropdown menu** under **Source** section and select **Master Branch as Source**
 5. **Save**
 
+###  Local Deployment
+
+Follow these steps to run website locally on your machine;
+1. Go to Github repository [sohailshams/explore-copenhagen](https://github.com/sohailshams/explore-copenhagen)
+2. Click on **Clone or Download** 
+3. Click on **Download Zip**
+4. Unzip the downloaded zip file
+5. Then run index.html file
+6. It will open in a browser which is set as a default browser.
+
+
 ## Credits
 ### Content
 
@@ -203,3 +214,4 @@ Following steps has been taken to deploy my project Explore Copenhagen on GitHub
 7. Code for the footer section, I used it from my previous project.
 8. Bootstrap is also used in the project. (Bootstrap grid, Bootstrap Moodle and Bootstrap classes)
 9. A very special thanks to my lovely wife my sons Ibrahim and Ismail for their support and motivation.
+10. Logo has been created by using [Brand Crowd](https://www.brandcrowd.com/maker)
