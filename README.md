@@ -6,7 +6,7 @@
 
 Explore Copenhagen is designed to be an informative website. The website contains a list of top attractions in the city
 Copenhagen, Denmark as well as it is also linked to a Google Places API. It is possible to sort these top attractions by their 
-distance from two main locations of the city. Further user can also search for any other attraction by using Google Places API.
+distance from two main locations of the city. Further user can also search for any other attraction, hotel or restaurant by using Google Places API.
 The website also provide information about the nearest hotel and restaurant when hovering over the list of top attractions.
 
 # UX
@@ -24,9 +24,9 @@ is kept simple as it consist of one page.
 4. As a user I would like to see nearest restaurant to these top attractions in city Copenhagen.
 5. As a user I would like to sort these attractions by distance from city center.
 6. As a user I would like to sort these attractions by distance from a train / metro station.
-7. As a user I would like to search for attractions by Google seach.
-8. As a user I would like to search for hotels using Google search.
-9. As a user I would like to search for restaurants using Google search.
+7. As a user I would like to search for attractions by Google Maps.
+8. As a user I would like to search for hotels using Google Maps.
+9. As a user I would like to search for restaurants using Google Maps.
 10. As a user I would like to contact the admin for more information.
 11. As a user I woould like to see a confirmation that my message has been sent.
 
@@ -59,7 +59,7 @@ form is available.
 
 ### Structure
 
-The website consist of one page. It contains a little history of Copenhagen and Denmark. A dropdown button for users
+The website consist of one page and this page has three sections. The page contains a little history of Copenhagen and Denmark. A dropdown button for users
 to sort the attracions from two main points of the city. Google Maps are available to search for anyother attraction, hotel
 or restaurant for the users. Finally if user need any other information to plan trip, user can contact by clicking on plan 
 your trip. User will be informed after the query is sent.
@@ -73,10 +73,12 @@ top to the bottom.
 ## Features
 
 Key features of the website are;
-- Background-Picture (A picture of Christianborg Palace from where the Danish Govenment it business cover the entire page.)
+- Background-Picture (A picture of Christianborg Palace from where the Danish Govenment run its business. This picture covers the entire page.)
 - History (A very brief history of Copenhagen and Denmark that will get user interest)
 - Top attracions in Copenhagen (A list of to attracions)
 - Sort by locations (A dropdown button that allow users to sort the attracions by distance from city center and Nørrepert station)
+- Hover over attractions (Hovering over attractions show extra information, which is nearest hotel and restaurant to that attraction. However 
+  it does not work on screen sizes less than 768px)
 - Search bar and Google Map (It allows user to look for any other attracion, hotel or restaurant)
 - Plan your Trip (It allow users to get in touch with admin for any information)
 - Message Sent (This confirmation message will pop up under plan your trip when user will send his query)
@@ -131,13 +133,13 @@ easy and straightforward way for the users to achieve their goals.
 - Click on the **Sort by location dropdown button** and choose City Center.
 6. *As a user I would like to sort these attractions by distance from a train / metro station.*
 - Click on the **Sort by location dropdown button** and choose Nørrepert Station.
-7. *As a user I would like to search for attractions by Google seach.*
+7. *As a user I would like to search for attractions by Google map.*
 - Go to the search box in the top right side of the page and search for attractions 
   and attraction markers will appear in google maps.
-8. *As a user I would like to search for hotels using Google search.*
+8. *As a user I would like to search for hotels using Google map.*
 - Go to the search box in the top right side of the page and search for hotels 
   and hotel markers will appear in google maps.
-9. *As a user I would like to search for restaurants using Google search.*
+9. *As a user I would like to search for restaurants using Google map.*
 - Go to the search box in the top right side of the page and search for restaurants 
   and restaurant markers will appear in google maps.
 10. *As a user I would like to contact the admin for more information.*
@@ -151,9 +153,9 @@ Further if wrong email is entered, it will also be notified.
 
 ### Different browsers & Mobiles
 
-The website has been tested on following web browsers and mobiles, and website looks fine and work properly on it.
+The website has been tested on following web browsers and mobiles, and website looks fine and work properly on them.
 For screen sizes 768px and above the page is divided into three sections History, Top Attraction and Serarch box plus Google Map.
-Whereas for small screen sizes every thing turns into one section andsits on top of eachother.
+Whereas for small screen sizes every thing turns into one section and sits on top of eachother.
 - Google Chroome
 - Microsoft Edge
 - firefox
@@ -169,7 +171,7 @@ screen sizes. For screen sizes like 4k-2560px a media query is also written so t
 
 ### Interesting Bugs
 
-During testing I found an interesting bug. Actually I have a hover function on attraction list and I disabled it for small 
+During testing I found an interesting bug. Actually I have a hover function on attraction list which I disabled for small 
 screens less than 768px. The bug was when I was selecting small screen from large screen this hover was not disabling until, 
 I refresh the page or I select any location from the dropdown button. It happened to be the same when I was moving from small 
 screen size to bigger than 768px, hover function was not activating until, I refresh the page or I select any location from 
@@ -198,18 +200,20 @@ Follow these steps to run website locally on your machine;
 ## Credits
 ### Content
 
-- [The history has been taken from copenhagen.com](https://www.copenhagen.com/historical-facts)
+- The history has been taken from [copenhagen.com](https://www.copenhagen.com/historical-facts)
+- Airport Passenger traffic data teken from [CPH Airport ](https://www.cph.dk/en/about-cph/press/news/2020/1/cph-traffic-data-close-to-30.3-million-passengers-in-2019)
+- Tourist stayed overnight data taken from [Statista](https://www.statista.com/statistics/936569/number-of-overnight-stays-at-hostels-in-denmark-by-region/)
 
 ### Media
 
-- [The picture in the background has been taken from Google](https://www.google.com/)
+- The picture in the background has been taken from [Google](https://www.google.com/)
 
 ### Acknowledgements
 1. A special thanks to my mentor **Ashish Srivastava** for his valuable feedback during mentoring sessions.
 2. Google Maps API code has been taken from [Google API Documentation](https://developers.google.com/maps/documentation/javascript/tutorial?hl=es-419)
 3. The design and layout of this website is based on the Rule of Thirds which I also used in my previous project.
 4. Code Institute tutor support has been a great support during the whole project, a very special thanks to tutor support.
-5. Besides tutor support [Stack overflow](https://stackoverflow.com/) and [Jquery](https://jquery.com/) were great source of help.
+5. Besides tutor support [Stack overflow](https://stackoverflow.com/), [Jquery](https://jquery.com/) and [W3Schools](https://www.w3schools.com/) were great source of help.
 6. Code Institute tutorial were very helpful to link contact form with emailjs.
 7. Code for the footer section, I used it from my previous project.
 8. Bootstrap is also used in the project. (Bootstrap grid, Bootstrap Moodle and Bootstrap classes)
