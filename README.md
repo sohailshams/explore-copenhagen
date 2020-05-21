@@ -168,8 +168,18 @@ Bootstrap has been used to make website responsive but separate media queries ha
 screen sizes. For screen sizes like 4k-2560px a media query is also written so that website look nice on big screens as well.
 
 ### Interesting Bugs
+
 During testing I found an interesting bug. Actually I have a hover function on attraction list and I disabled it for small 
 screens less than 768px. The bug was when I was selecting small screen from large screen this hover was not disabling until, 
 I refresh the page or I select any location from the dropdown button. It happened to be the same when I was moving from small 
 screen size to bigger than 768px, hover function was not activating until, I refresh the page or I select any location from 
 the dropdown button. Luckily I found out that I need to put if statement inside each hover function and it worked.
+
+## Deployment
+
+Following steps has been taken to deploy my project Explore Copenhagen on GitHub pages;
+1. Go to GitHub and click on repository [sohailshams/explore-copenhagen](https://github.com/sohailshams/explore-copenhagen)
+2. Click on **Settings** on the top right of the page
+3. Scroll down to the **GitHub pages section**
+4. Click on **dropdown menu** under **Source** section and select **Master Branch as Source**
+5. **Save**
