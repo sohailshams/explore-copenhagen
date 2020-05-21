@@ -183,3 +183,20 @@ Following steps has been taken to deploy my project Explore Copenhagen on GitHub
 3. Scroll down to the **GitHub pages section**
 4. Click on **dropdown menu** under **Source** section and select **Master Branch as Source**
 5. **Save**
+
+## Credits
+### Content
+
+- [The history has been taken from copenhagen.com](https://www.copenhagen.com/historical-facts)
+
+### Media
+
+- [The picture in the background has been taken from Google](https://www.google.com/)
+
+### Acknoledgements
+1. A special thanks to my mentor **Ashish Srivastava** for his valuable feedback during mentoring sessions.
+2. Google Maps API code has been taken from [Google API Documentation](https://developers.google.com/maps/documentation/javascript/tutorial?hl=es-419)
+3. The design and layout of this website is based on the Rule of Thirds which I also used in my previous project.
+4. Code Institute tutor support has been a great support during the whole project, a very special thanks to tutor support.
+5. Besides tutor support [Stack overflow](https://stackoverflow.com/) and [Jquery](https://jquery.com/) were great source of help.
+6. Code Institute tutorial were very helpful to link contact form with emailjs.
