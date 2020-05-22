@@ -5,7 +5,8 @@
 .image-container {
   height: auto;
   padding-bottom: 50px;
-  background: url("../images/pic-10.jpg") no-repeat bottom right fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/pic11.jpg") no-repeat bottom right fixed;
   background-size: cover;
   background-position: center;
   min-height: 700px;
@@ -22,7 +23,7 @@
 
 .his-heading {
   margin-top: 50px;
-  color: #e84610;
+  color: #fd7e14;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
 }
@@ -35,7 +36,7 @@
 
 .att-heading {
   margin-top: 50px;
-  color: #e84610;
+  color: #fd7e14;
 
   font-family: "Oswald", sans-serif;
   font-weight: bold;
@@ -61,7 +62,7 @@ ol {
 /*---------------------------Attractions list-hover styling*/
 .location-info {
   background-color: rgba(52, 58, 67, 0.7);
-  color: #e84610;
+  color: #fd7e14;
   width: 140px;
   font-size: 10px;
   border: 1px solid;
@@ -80,7 +81,7 @@ ol {
 /*---------------------------Button, search bar and selection &message bar*/
 
 #pac-input {
-  background-color: #e84610;
+  background-color: #fd7e14;
   color: #fafafa;
   font-family: "Varela+Roun", sans-serif;
   font-size: 15px;
@@ -103,19 +104,29 @@ ol {
   border: solid 1px blue;
   margin-left: 20px;
   padding-left: 10px;
-  background-color: #e84610;
+  background-color: #fd7e14;
   color: #fafafa;
   width: 200px;
 }
 
 .btn {
-  background-color: #e84610;
+  background-color: #fd7e14;
   font-family: "Varela+Roun", sans-serif;
   font-size: 15px;
   font-weight: bold;
   margin-top: 10px;
+  border: solid 1px blue;
+}
+.btn-dark.focus,
+.btn-dark:focus {
+  background-color: #fd7e14;
+  border-color: blue;
 }
 
+.btn-dark:hover {
+  background-color: #343a43;
+  border-color: blue;
+}
 #send-message {
   display: none;
   height: 30px;
@@ -171,6 +182,9 @@ footer {
 @media (max-width: 767px) {
   .his-heading {
     padding-top: 15px;
+  }
+  .att-text {
+    padding-top: 10px;
   }
 
   .att-heading {
@@ -266,7 +280,7 @@ footer {
   }
 
   #send-message {
-   height: 60px;
+    height: 60px;
     width: 400px;
     font-size: 30px;
     margin-top: 35px;
