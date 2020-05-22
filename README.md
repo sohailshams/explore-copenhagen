@@ -38,7 +38,7 @@ is kept simple as it consist of one page.
 #### Hover Effect
 
 1. When a user hover over attractions list a new window appears that contains information about nearest hotel and restaurant.
-2. Hover effect hvr-pulse has been used in social media links.
+2. Hover effect hvr-wobble-bottom has been used in social media links.
 
 ## Wireframes
 - [Link to Wireframes](https://balsamiq.cloud/sisqdsv/pd59mcb/r2278) 
