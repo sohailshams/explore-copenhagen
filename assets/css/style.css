@@ -90,7 +90,7 @@ ol {
   text-overflow: ellipsis;
   width: 200px;
   border-radius: 5px 5px 5px 5px;
-  border: solid 1px blue;
+  border: solid 2px #205792;
   height: 30px;
   margin-top: 50px;
 }
@@ -101,7 +101,7 @@ ol {
   font-family: "Varela+Roun", sans-serif;
   height: 30px;
   border-radius: 5px 5px 5px 5px;
-  border: solid 1px blue;
+  border: solid 2px #205792;
   margin-left: 20px;
   padding-left: 10px;
   background-color: #fd7e14;
@@ -115,7 +115,7 @@ ol {
   font-size: 15px;
   font-weight: bold;
   margin-top: 10px;
-  border: solid 1px blue;
+  border: solid 2px #205792;
 }
 .btn-dark.focus,
 .btn-dark:focus {
