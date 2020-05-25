@@ -1,4 +1,5 @@
-//$(document).ready(function(){
+// I did not use $(document).ready(function(){ }); as it was giving loading issues to Google Maps
+// Further without this the code runs fine.
 //-----------------Code from Google map api documentation
 function initAutocomplete() {
   var map = new google.maps.Map(document.getElementById("map"), {
@@ -17,8 +18,6 @@ function initAutocomplete() {
   });
 
   var markers = [];
-  // Listen for the event fired when the user selects a prediction and retrieve
-  // more details for that place.
   searchBox.addListener("places_changed", function () {
     var places = searchBox.getPlaces();
 
@@ -101,11 +100,12 @@ function sendMail(contactForm) {
   return false;
 }
 
-//-----------------Took some code from Stack Overflow CI tutorials, Tutor help and changed accordingly
+//-----------------Get help from Stack Overflow CI tutorials, Tutor support to write this code where i got stuck
 function sortFunction() {
   getSelectValue = document.getElementById("location-selector").value;
   if (getSelectValue == "0") {
     $("#attractions").empty();
+    // Second parameter is added in the array to push them as a respective class to first parameter
     var myArray = [
       ["Christianborg Palace", "c-palace"],
       ["Ny Carlberg Glyptotek", "nc-glyptotek"],
@@ -119,11 +119,14 @@ function sortFunction() {
       ["The Little Marmaid", "tl-marmaid"],
     ];
     var index, entry;
+    // Created an ordered list
     var olist = document.createElement("OL");
     olist.setAttribute("class", "location-list");
     for (index = 0; index < myArray.length; ++index) {
       entry = myArray[index];
+      // Created LI
       var node = document.createElement("LI");
+      // Added classes (parameter two) in LI
       node.setAttribute("class", entry[1]);
       textnode = document.createTextNode(`${entry[0]}`);
       node.appendChild(textnode);
@@ -133,6 +136,7 @@ function sortFunction() {
   }
   if (getSelectValue == "1") {
     $("#attractions").empty();
+    // Third parameter is added in the array to push them as a respective class to first parameter
     var myArray = [
       ["Tivoli Gardens", 280, "t-garden"],
       ["Ny Carlberg Glyptotek", 500, "nc-glyptotek"],
@@ -151,11 +155,14 @@ function sortFunction() {
     });
 
     var index, entry;
+    // Created an ordered list
     var olist = document.createElement("OL");
     olist.setAttribute("class", "location-list");
     for (index = 0; index < myArray.length; ++index) {
       entry = myArray[index];
+      // Created LI
       var node = document.createElement("LI");
+      // Added classes (parameter three) in LI
       node.setAttribute("class", entry[2]);
       textnode = document.createTextNode(`${entry[0]}`);
       node.appendChild(textnode);
@@ -165,6 +172,7 @@ function sortFunction() {
   }
   if (getSelectValue == "2") {
     $("#attractions").empty();
+    // Second parameter is added in the array to push them as a respective class to first parameter
     var myArray = [
       ["Tivoli Gardens", 1500, "t-garden"],
       ["Ny Carlberg Glyptotek", 1700, "nc-glyptotek"],
@@ -183,11 +191,14 @@ function sortFunction() {
     });
 
     var index, entry;
+    // Created an ordered list
     var olist = document.createElement("OL");
     olist.setAttribute("class", "location-list");
     for (index = 0; index < myArray.length; ++index) {
       entry = myArray[index];
+      // Created LI
       var node = document.createElement("LI");
+      // Added classes (parameter three) in LI
       node.setAttribute("class", entry[2]);
       textnode = document.createTextNode(`${entry[0]}`);
       node.appendChild(textnode);
@@ -201,6 +212,8 @@ function sortFunction() {
 function hoverFunction() {
   $(".t-garden").hover(
     function () {
+      // An if statement is added to disable hover function on screen size less than 768px
+      // Note: if ($(window).width() > 750). The width calculated by this is equal to 768px
       if ($(window).width() > 750)
         $(this).append(
           $(
@@ -339,5 +352,3 @@ function hoverFunction() {
     }
   );
 }
-
-//});
