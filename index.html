@@ -28,9 +28,10 @@
       })();
     </script>
   </head>
-
+  <!-- onload="hoverFunction()" is adedd in body so that hover effect works on attractions list on page load before onchange function is called -->
   <body onload="hoverFunction()">
     <header>
+      <!--Bootstrap grid is used in the project-->
       <div class="row no-gutters">
         <div class="col-12 bg-dark">
           <h2 class="navbar-heading">
@@ -55,6 +56,7 @@
 
           <div class="text-center">
             <div class="col">
+              <!--Bootstrap modal is used here-->
               <button
                 type="button"
                 class="btn btn-dark btn-lg"
@@ -147,6 +149,7 @@
                 Center and Nørreport Station. Select the location from dropdown
                 to sort the attractions by distance from these locations.
               </p>
+              <!--Hover function is called again on onchage so that hover effect works on the sorted attractions list-->
               <select
                 class="location-select"
                 id="location-selector"
@@ -156,6 +159,7 @@
                 <option value="1">City Center</option>
                 <option value="2">Nørreport Station</option>
               </select>
+              <!--On page load this attraction is displated on the page-->
               <div id="attractions">
                 <ol class="location-list">
                   <li class="c-palace">Christianborg Palace</li>
@@ -180,13 +184,14 @@
                   placeholder="Search Box"
                 />
               </div>
+              <!--This empty div is created for Google Maps -->
               <div id="map"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    <!--Footer code I reused from first milestone project-->
     <footer class="container-fluid">
       <div class="row">
         <div class="col-md-4">
