@@ -1,5 +1,9 @@
+import "../css/style.css"
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
 // I did not use $(document).ready(function(){ }); as it was giving loading issues to Google Maps
-// Further without this the code runs fine.
 //-----------------Code from Google map api documentation
 function initAutocomplete() {
   var map = new google.maps.Map(document.getElementById("map"), {
@@ -35,7 +39,6 @@ function initAutocomplete() {
     var bounds = new google.maps.LatLngBounds();
     places.forEach(function (place) {
       if (!place.geometry) {
-        console.log("Returned place contains no geometry");
         return;
       }
       var icon = {
@@ -78,7 +81,6 @@ function sendMail(contactForm) {
     })
     .then(
       function (response) {
-        console.log("SUCCESS", response);
         document.getElementById("form-reset").reset();
         $(".modal").modal("toggle");
         $(function () {
@@ -100,10 +102,11 @@ function sendMail(contactForm) {
   return false;
 }
 
-//-----------------Get help from Stack Overflow CI tutorials, Tutor support to write this code where i got stuck
-function sortFunction() {
-  getSelectValue = document.getElementById("location-selector").value;
-  if (getSelectValue == "0") {
+// Sorting logic for the attractions
+const getSelectValue = document.querySelector('#location-selector');
+
+getSelectValue.addEventListener('change', (event) => {
+  if (event.target.value == "0") {
     $("#attractions").empty();
     // Second parameter is added in the array to push them as a respective class to first parameter
     var myArray = [
@@ -134,7 +137,7 @@ function sortFunction() {
       document.getElementById("attractions").appendChild(olist);
     }
   }
-  if (getSelectValue == "1") {
+  if (event.target.value == "1") {
     $("#attractions").empty();
     // Third parameter is added in the array to push them as a respective class to first parameter
     var myArray = [
@@ -164,13 +167,13 @@ function sortFunction() {
       var node = document.createElement("LI");
       // Added classes (parameter three) in LI
       node.setAttribute("class", entry[2]);
-      textnode = document.createTextNode(`${entry[0]}`);
+      var textnode = document.createTextNode(`${entry[0]}`);
       node.appendChild(textnode);
       olist.appendChild(node);
       document.getElementById("attractions").appendChild(olist);
     }
   }
-  if (getSelectValue == "2") {
+  if (event.target.value == "2") {
     $("#attractions").empty();
     // Second parameter is added in the array to push them as a respective class to first parameter
     var myArray = [
@@ -200,16 +203,25 @@ function sortFunction() {
       var node = document.createElement("LI");
       // Added classes (parameter three) in LI
       node.setAttribute("class", entry[2]);
-      textnode = document.createTextNode(`${entry[0]}`);
+      var textnode = document.createTextNode(`${entry[0]}`);
       node.appendChild(textnode);
       olist.appendChild(node);
       document.getElementById("attractions").appendChild(olist);
     }
   }
-}
-//-----------------code for hover taken from https://api.jquery.com/hover/ and changed accordingly
+});
 
-function hoverFunction() {
+// hoverFunction is called on page load so that hover effect works on attractions list on page load.
+window.addEventListener('load', (event) => {
+  hoverFunction();
+});
+
+// hoverFunction is called on change 
+$( "#location-selector" ).change(function() {
+  hoverFunction();
+});
+
+function hoverFunction () {
   $(".t-garden").hover(
     function () {
       // An if statement is added to disable hover function on screen size less than 768px
@@ -352,3 +364,5 @@ function hoverFunction() {
     }
   );
 }
+
+});

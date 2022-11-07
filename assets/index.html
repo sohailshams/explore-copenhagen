@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <!--<link rel="stylesheet" href="css/style.css" type="text/css" />-->
         <title>Explore Copenhagen</title>
         <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
         <script>
@@ -16,14 +16,13 @@
             })();
         </script>
     </head>
-    <!-- onload="hoverFunction()" is adedd in body so that hover effect works on attractions list on page load before onchange function is called -->
-    <body onload="hoverFunction()">
+    <body>
         <header>
             <!--Bootstrap grid is used in the project-->
             <div class="row no-gutters">
                 <div class="col-12 bg-dark">
                     <h2 class="navbar-heading">
-                        <span><img src="assets/images/logo.png" alt="logo" /></span>Let's Explore Copenhagen
+                        <span><img src="./images/logo.png" alt="logo" /></span>Let's Explore Copenhagen
                     </h2>
                 </div>
             </div>
@@ -86,7 +85,7 @@
                                 These attractions are situated at walkable distance from City Center and Nørreport Station. Select the location from dropdown to sort the attractions by distance from these locations.
                             </p>
                             <!--Hover function is called again on onchage so that hover effect works on the sorted attractions list-->
-                            <select class="location-select" id="location-selector" onchange="sortFunction();hoverFunction()">
+                            <select class="location-select" id="location-selector">
                                 <option value="0">Sort by location?</option>
                                 <option value="1">City Center</option>
                                 <option value="2">Nørreport Station</option>
@@ -132,13 +131,13 @@
                         <div class="col footer-links">
                             <ul class="list-inline social-media-links">
                                 <li class="col-2 col-md-3 footer-items list-inline-item">
-                                    <a href="#" class="hvr-wobble-bottom" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> <span class="sr-only">Facebook</span></a>
+                                    <a href="https://www.facebook.com/sohail.252/" class="hvr-wobble-bottom" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> <span class="sr-only">Facebook</span></a>
                                 </li>
                                 <li class="col-2 col-md-3 footer-items list-inline-item">
-                                    <a href="#" class="hvr-wobble-bottom" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> <span class="sr-only">Linkedin</span></a>
+                                    <a href="https://www.linkedin.com/in/muhammad-sohail-shams-56995126/" class="hvr-wobble-bottom" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> <span class="sr-only">Linkedin</span></a>
                                 </li>
                                 <li class="col-2 col-md-3 footer-items list-inline-item">
-                                    <a href="#" class="hvr-wobble-bottom" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i> <span class="sr-only">Youtube</span></a>
+                                    <a href="https://github.com/sohailshams" class="hvr-wobble-bottom" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> <span class="sr-only">Github</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -151,6 +150,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="assets/js/script.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

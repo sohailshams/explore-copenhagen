@@ -1,0 +1,37 @@
+{
+  "name": "explore-copenhagen",
+  "version": "1.0.0",
+  "description": "Explore Copenhagen is designed to be an informative website. The website contains a list of top attractions in the city\r Copenhagen, Denmark as well as it is also linked to a Google Places API. It is possible to sort these top attractions by their \r distance from two main locations of the city. Further user can also search for any other attraction, hotel or restaurant by using Google Places API.\r The website also provide information about the nearest hotel and restaurant when hovering over the list of top attractions.",
+  "main": "./assets/js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "serve": "webpack-dev-server --mode=development",
+    "deploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohailshams/explore-copenhagen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sohailshams/explore-copenhagen/issues"
+  },
+  "homepage": "https://github.com/sohailshams/explore-copenhagen#readme",
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "dotenv-webpack": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.7",
+    "style-loader": "^2.0.0"
+  }
+}
