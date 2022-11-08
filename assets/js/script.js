@@ -3,8 +3,10 @@ import "../css/style.css"
 
 document.addEventListener('DOMContentLoaded', () => {
 
-// I did not use $(document).ready(function(){ }); as it was giving loading issues to Google Maps
+
 //-----------------Code from Google map api documentation
+google.maps.event.addDomListener(window, 'load', initAutocomplete);
+
 function initAutocomplete() {
   var map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 55.6761, lng: 12.5683 },

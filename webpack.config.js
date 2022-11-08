@@ -1,7 +1,8 @@
+require('dotenv').config({ path: './.env' }); 
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
-
+const api_key = process.env.KEY;
 
 module.exports = {
 entry: './assets/js/script.js',
@@ -44,6 +45,8 @@ entry: './assets/js/script.js',
       filename: 'index.html',
       inject: 'body',
       inlineSource: 'output.bundle.js',
+  
+      apiUrl: `https://maps.googleapis.com/maps/api/js?key=${api_key}&libraries=places`,
 
     }),
     new Dotenv()
