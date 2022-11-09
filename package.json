@@ -1,14 +1,17 @@
 {
+  "homepage": "https://sohailshams.github.io/explore-copenhagen",
   "name": "explore-copenhagen",
   "version": "1.0.0",
   "description": "Explore Copenhagen is designed to be an informative website. The website contains a list of top attractions in the city\r Copenhagen, Denmark as well as it is also linked to a Google Places API. It is possible to sort these top attractions by their \r distance from two main locations of the city. Further user can also search for any other attraction, hotel or restaurant by using Google Places API.\r The website also provide information about the nearest hotel and restaurant when hovering over the list of top attractions.",
   "main": "./assets/js/script.mjs",
   "type": "commonjs",
+  
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server --mode=development",
-    "deploy": "npm run build"
+    "start": "webpack-dev-server --mode=development"
   },
   "repository": {
     "type": "git",
@@ -19,7 +22,6 @@
   "bugs": {
     "url": "https://github.com/sohailshams/explore-copenhagen/issues"
   },
-  "homepage": "https://github.com/sohailshams/explore-copenhagen#readme",
   "dependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
@@ -33,6 +35,7 @@
   },
   "devDependencies": {
     "css-loader": "^5.2.7",
+    "gh-pages": "^4.0.0",
     "style-loader": "^2.0.0"
   }
 }
